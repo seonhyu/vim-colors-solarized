@@ -609,9 +609,9 @@ else
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base00 .s:bg_none
 endif
-exe "hi! StatusLine"     .s:fmt_none   .s:fg_base1  .s:bg_base02 .s:fmt_revbb
-exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base00 .s:bg_base02 .s:fmt_revbb
-exe "hi! Visual"         .s:fmt_none   .s:fg_none   .s:bg_base03
+exe "hi! StatusLine"     .s:fmt_none   .s:fg_blue  .s:bg_base02 .s:fmt_revbb
+exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base00 .s:bg_base01 .s:fmt_revbb
+exe "hi! Visual"         .s:fmt_none   .s:fg_none   .s:bg_base01
 exe "hi! Directory"      .s:fmt_none   .s:fg_blue   .s:bg_none
 exe "hi! ErrorMsg"       .s:fmt_revr   .s:fg_red    .s:bg_none
 exe "hi! IncSearch"      .s:fmt_stnd   .s:fg_orange .s:bg_none
@@ -1171,7 +1171,7 @@ hi! link vimNotation Label
 hi! link htmlArg Label
 
 " Better indication of current buffer
-hi! link StatusLine DiffChange
-hi! link StatusLineNC DiffAdd
+"hi! link StatusLine DiffChange
+"hi! link StatusLineNC DiffAdd
 
 hi! VertSplit guifg=#002b36  guibg=#002b36
